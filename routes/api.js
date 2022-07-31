@@ -998,7 +998,7 @@ router.get('/game/susunkata', async (req, res, next) => {
 
 router.get('/game/tembakbendera', async (req, res, next) => {
 
-	let ra = await fetchJson('https://raw.githubusercontent.com/AlipBot/data-rest-api/main/tebakbendera.json')
+	let ra = await fetchJson('https://raw.githubusercontent.com/Aiinne/scrape/main/flag.json')
 	let ha = ra[Math.floor(Math.random() * ra.length)]
 		  
   res.json({
@@ -1012,7 +1012,7 @@ router.get('/game/tembakbendera', async (req, res, next) => {
 
 router.get('/game/tembakgame', async (req, res, next) => {
 
-	let ra = await fetchJson('https://raw.githubusercontent.com/AlipBot/data-rest-api/main/tebakgame.json')
+	let ra = await fetchJson('https://raw.githubusercontent.com/Aiinne/scrape/main/tebakgame.json')
 	let ha = ra[Math.floor(Math.random() * ra.length)]
 		  
   res.json({
@@ -1050,7 +1050,7 @@ router.get('/game/tembaklirik', async (req, res, next) => {
 })
 router.get('/game/tembaklagu', async (req, res, next) => {
 
-	let ra = await fetchJson('https://raw.githubusercontent.com/AlipBot/data-rest-api/main/tebaklagu.json')
+	let ra = await fetchJson('https://raw.githubusercontent.com/Aiinne/scrape/main/tebaklagu.json')
 	let ha = ra[Math.floor(Math.random() * ra.length)]
 		  
   res.json({
