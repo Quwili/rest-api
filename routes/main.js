@@ -11,7 +11,7 @@ router.get('/statistic', async (req, res, next) => {
 
 	res.json({
 	status: true,
-	creator: `${creator}`,
+	creator: `Aine`,
 	runtime: runtime(process.uptime()),
 	visitor: hits.value,
 
