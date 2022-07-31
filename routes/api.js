@@ -932,15 +932,15 @@ router.get('/search/sticker', async (req, res, next) => {
 
 router.get('/randomgambar/couplepp', async (req, res, next) => {
 
-	let resultt = await fetchJson('https://raw.githubusercontent.com/AlipBot/data-rest-api/main/kopel.json')
+	let resultt = await fetchJson('https://raw.githubusercontent.com/Quwili/scrape/main/ppcouple.json')
 	let random = resultt[Math.floor(Math.random() * resultt.length)]
 
 	res.json({
 	status: true,
 	creator: `Aine`,
 		result: {
-			male: random.male,
-			female: random.female
+			male: random.cowo,
+			female: random.cewe
 		}
 	})
 
